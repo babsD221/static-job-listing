@@ -1,0 +1,132 @@
+$color-light-grayish-cyan-bg: hsl(180, 52%, 96%);
+$color-light-grayish-cyan-filter: hsl(180, 31%, 95%);
+$color-dark-grayish-cyan: hsl(180, 8%, 52%);
+$color-very-dark-grayish-cyan: hsl(180, 14%, 20%);
+
+* {
+    margin: 0;
+}
+body {
+    margin: 0;
+    background-color:$color-light-grayish-cyan-bg ;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+}
+
+.header {
+    height: 50%;
+    background-color: $color-dark-grayish-cyan;
+}
+
+.header img {
+    width: 100%;
+    height: 10vh;
+    object-fit: cover;
+}
+
+.container {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.job-list {
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+    width: inherit;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.job-element {
+    background-color: white;
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0px 10px 12px 2px $color-dark-grayish-cyan;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.job-element:hover {
+    transform: scale(1 ,1.05);
+}
+
+h3 {
+    cursor: pointer;
+}
+h3:hover {
+    color: #64BABB;
+}
+
+.job-element {
+
+    .job-description {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .job-skills {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+}
+.job-description {
+    .job-logo {
+        width: 60px;
+        
+    }
+    .job-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    img {
+        width: inherit;
+    }
+}
+
+.job-specs {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 12px;
+}
+
+.job-specs {
+    p:first-child {
+        color: #64BABB;
+    }
+}
+
+.additional-info {
+    display: flex;
+    gap: 2rem;
+    font-size: 12px;
+    color: $color-dark-grayish-cyan;
+}
+
+.job-skills p  {
+    background-color: $color-light-grayish-cyan-bg;
+    padding: 0.4rem;
+    border-radius: 5px;
+    color:#64BABB ;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.job-skills p:hover {
+    color: white;
+    background-color:#5DA5A4 ;
+}
